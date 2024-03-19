@@ -3,11 +3,11 @@ import java.util.Scanner;
 
 public final class PitLane {
     private static PitLane instance;
-    private Equipo vEquipo[];
+    private ArrayList <Equipo> lstEquipo;
     private Monoplaza box[];
 
     private PitLane() {
-        this.vEquipo = new Equipo[10];
+        this.lstEquipo = new ArrayList<Equipo>();
         this.box = new Monoplaza[10];
     }
 
